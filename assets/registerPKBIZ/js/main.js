@@ -1,6 +1,5 @@
-
-var year = new Date().getFullYear();
-document.getElementById("currentYear").innerHTML = year;
+var year = new Date().getFullYear()
+document.getElementById('currentYear').innerHTML = year
 
 document.addEventListener(
   'click',
@@ -337,15 +336,28 @@ if (form) {
     // validate the form
     let firstnameValid = hasValue(form.elements['firstname'], NAME_REQUIRED)
     let lastnameValid = hasValue(form.elements['lastname'], LASTNAME_REQUIRED)
-    let phoneValid = validatePhone(form.elements['phone'], PHONE_REQUIRED, PHONE_INVALID)
+    let phoneValid = validatePhone(
+      form.elements['phone'],
+      PHONE_REQUIRED,
+      PHONE_INVALID,
+    )
     let emailValid = validateEmail(
       form.elements['email'],
       EMAIL_REQUIRED,
       EMAIL_INVALID,
     )
-    let organizationValid = hasValue(form.elements['organization'], ORGANIZATION_REQUIRED)
-    let businesstypeValid = hasValue(form.elements['businesstype'], BUSINESSTYPE_REQUIRED)
-    let contactbackValid = hasConsent(form.elements['contactback'], CONTACTBACK_REQUIRED)
+    let organizationValid = hasValue(
+      form.elements['organization'],
+      ORGANIZATION_REQUIRED,
+    )
+    let businesstypeValid = hasValue(
+      form.elements['businesstype'],
+      BUSINESSTYPE_REQUIRED,
+    )
+    let contactbackValid = hasConsent(
+      form.elements['contactback'],
+      CONTACTBACK_REQUIRED,
+    )
     let consentValid = hasConsent(form.elements['consent'], CONSENT_REQUIRED)
 
     if (
@@ -355,7 +367,7 @@ if (form) {
       emailValid &&
       organizationValid &&
       businesstypeValid &&
-      contactbackValid && 
+      contactbackValid &&
       consentValid
     ) {
       // submti loading
