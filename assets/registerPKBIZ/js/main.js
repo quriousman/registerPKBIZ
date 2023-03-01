@@ -377,12 +377,15 @@ if (form) {
       //   console.log(formData)
 
       const formData = new FormData()
+      const today = new Date()
       formData.set('firstname', form.elements['firstname'].value)
       formData.set('lastname', form.elements['lastname'].value)
       formData.set('phone', "'" + form.elements['phone'].value)
       formData.set('email', form.elements['email'].value)
       formData.set('organization', form.elements['organization'].value)
       formData.set('businesstype', form.elements['businesstype'].value)
+      formData.set('date', today)
+
       // Display the values
 
       // for (const value of formData.values()) {
