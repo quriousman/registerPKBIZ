@@ -1,3 +1,7 @@
+
+var year = new Date().getFullYear();
+document.getElementById("currentYear").innerHTML = year;
+
 document.addEventListener(
   'click',
   function (e) {
