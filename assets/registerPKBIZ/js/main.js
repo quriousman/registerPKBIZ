@@ -321,6 +321,7 @@ const form = document.forms['contact']
 const NAME_REQUIRED = 'กรุณากรอกชื่อ'
 const LASTNAME_REQUIRED = 'กรุณากรอกนามสกุล'
 const PHONE_REQUIRED = 'กรุณากรอกหมายเลขโทรศัพท์'
+const PHONE_INVALID = 'กรุณากรอกหมายเลขโทรศัพท์ให้ถูกต้อง'
 const EMAIL_REQUIRED = 'กรุณากรอกอีเมล'
 const EMAIL_INVALID = 'กรุณากรอกอีเมลให้ถูกต้อง'
 const ORGANIZATION_REQUIRED = 'กรุณากรอกชื่อบริษัท/ธุรกิจของท่าน'
@@ -336,7 +337,7 @@ if (form) {
     // validate the form
     let firstnameValid = hasValue(form.elements['firstname'], NAME_REQUIRED)
     let lastnameValid = hasValue(form.elements['lastname'], LASTNAME_REQUIRED)
-    let phoneValid = hasValue(form.elements['phone'], PHONE_REQUIRED)
+    let phoneValid = validatePhone(form.elements['phone'], PHONE_REQUIRED, PHONE_INVALID)
     let emailValid = validateEmail(
       form.elements['email'],
       EMAIL_REQUIRED,
