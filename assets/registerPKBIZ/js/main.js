@@ -303,7 +303,7 @@ function showSuccessForm() {
 function validatePhone() {
   const phone = document.querySelector('#phone')
   const phoneValue = phone.value.trim()
-  const phoneRegex = /^0[0-9]{9}$/
+  const phoneRegex = /^0[0-9]{8,9}$/
   if (phoneValue === '') {
     return showError(phone, PHONE_REQUIRED)
   }
