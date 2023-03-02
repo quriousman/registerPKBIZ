@@ -314,7 +314,7 @@ function validatePhone() {
 }
 
 const scriptURL =
-  'https://script.google.com/macros/s/AKfycbxJcjJ6py5xwHFLSCMDX6hTCT8TRReP4fulD7Md9nxu3Nq6_-gspvCDDdMmSKEajjc32Q/exec'
+  'https://script.google.com/macros/s/AKfycbwKU5gPTAzkRbmrvIJoJMi8UJYNuoBCS-Wf2hO0IJarhMrDQiUO7341IQTspUP5L2Y4/exec'
 const form = document.forms['contact']
 
 const NAME_REQUIRED = 'กรุณากรอกชื่อ'
