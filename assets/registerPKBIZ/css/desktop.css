@@ -372,7 +372,7 @@ div.nav-d>ul {
     width: 40%
 }
 
-.register-afp .register {
+.register-pkb .register {
     width: 450px;
     z-index: 50;
     position: fixed;
@@ -380,25 +380,25 @@ div.nav-d>ul {
     right: 20px
 }
 
-.register-afp .list-choice {
+.register-pkb .list-choice {
     display: flex
 }
 
-.register-afp .tab-content {
+.register-pkb .tab-content {
     padding: 10px 0 0
 }
 
 @media(min-width:1200px) {
-    .register-afp .register {
+    .register-pkb .register {
         right: calc(50% - 570px)
     }
 }
 
-.afp-intro {
+.pkb-intro {
     margin-bottom: 2rem
 }
 
-.afp-intro .info {
+.pkb-intro .info {
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw + 8px);
     padding-left: calc(50vw - 50%);
@@ -407,27 +407,27 @@ div.nav-d>ul {
     min-height: 100px
 }
 
-.afp-intro .pic {
+.pkb-intro .pic {
     margin: -180px 470px 0 0
 }
 
 @media(min-width:1200px) {
-    .afp-intro .pic {
+    .pkb-intro .pic {
         margin-right: 500px
     }
 }
 
-.afp-content {
+.pkb-content {
     font-family: var(--s-heading);
     margin-right: 470px
 }
 
-.afp-content-list {
+.pkb-content-list {
     font-size: 0.8rem
 }
 
 /* @media(min-width:1200px) {
-    .afp-content {
+    .pkb-content {
         font-family: var(--s-heading);
         margin-right: 500px
     }

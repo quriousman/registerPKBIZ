@@ -417,7 +417,7 @@ if (form) {
         .catch((error) => console.error('Error!', error.message))
 
       //   fetch(
-      //     'https://peakfunction.azurewebsites.net/api/RegisterAFP?code=8ilhgPNTmySFhHUtJyWY2Zyyz_l1hL-9qQE-obIFD8mDAzFu65-SAw==',
+      //     'https://peakfunction.azurewebsites.net/api/Registerpkb?code=8ilhgPNTmySFhHUtJyWY2Zyyz_l1hL-9qQE-obIFD8mDAzFu65-SAw==',
       //     requestOptions,
       //   )
       //     .then((result) => {
@@ -443,7 +443,7 @@ if (form) {
 
 // }
 
-// RESGISTER AFP
+// RESGISTER pkb
 document.addEventListener(
   'click',
   function (e) {
@@ -479,8 +479,8 @@ function myFunction() {
   }
 }
 
-// register afp sticky
-if (document.querySelector('.register-afp')) {
+// register pkb sticky
+if (document.querySelector('.register-pkb')) {
   document.addEventListener('scroll', (e) => {
     var marginTop = 200 - window.scrollY
     if (marginTop > 80) {

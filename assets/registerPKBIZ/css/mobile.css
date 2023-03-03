@@ -213,7 +213,7 @@ textarea {
     color: inherit;
     font-size: 1rem;
     padding: .5em;
-    line-height: 1.3;
+    line-height: 1.1;
     border-radius: var(--s-rounded-1);
     background-color: #fff;
     width: 100%
@@ -1737,33 +1737,34 @@ a:active {
     border-radius: 30px
 }
 
-.register-afp .register {
+.register-pkb .register {
     max-width: 470px;
     margin: 0 auto
 }
 
-.register-afp .form-content {
+.register-pkb .form-content {
     font-family: var(--s-heading);
+    font-size: 0.8rem;
     padding: 40px;
     background-color: #f2f2f5;
     border-radius: 7px
 }
 
-.register-afp .success {
+.register-pkb .success {
     border: 1px solid var(--s-color-success)
 }
 
-.register-afp .error {
+.register-pkb .error {
     border: 1px solid var(--s-color-danger)
 }
 
-.register-afp form {
+.register-pkb form {
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content
 }
 
-.register-afp .success-noti {
+.register-pkb .success-noti {
     color: var(--s-color-success);
     display: flex;
     align-items: center;
@@ -1774,12 +1775,12 @@ a:active {
     transition: .3s ease-in-out
 }
 
-.register-afp .success-noti.show {
+.register-pkb .success-noti.show {
     height: 100%;
     opacity: 1
 }
 
-.afp-intro .info {
+.pkb-intro .info {
     text-align: center;
     padding: 36px 36px 120px;
     min-height: 100px;
@@ -1789,27 +1790,27 @@ a:active {
     margin: 0 calc(var(--s-gap)*-1)
 }
 
-.afp-intro .pic {
+.pkb-intro .pic {
     margin: -105px 0 20px
 }
 
-.afp-intro h2 {
+.pkb-intro h2 {
     color: #fff;
     font-size: 32px
 }
 
-.afp-intro .list-choice {
+.pkb-intro .list-choice {
     display: grid;
     justify-content: center;
     gap: .5em
 }
 
-.afp-intro img {
+.pkb-intro img {
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .2), 0 2px 16px rgba(0, 0, 0, .15)
 }
 
-.afp-intro .col {
+.pkb-intro .col {
     display: flex;
     align-items: center;
     gap: .25em;
