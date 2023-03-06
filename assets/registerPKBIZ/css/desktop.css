@@ -419,11 +419,11 @@ div.nav-d>ul {
 
 .pkb-content {
     font-family: var(--s-heading);
-    margin-right: 470px
+    margin-right: 520px
 }
 
 .pkb-content-list {
-    font-size: 0.8rem
+    font-size: 1rem
 }
 
 /* @media(min-width:1200px) {

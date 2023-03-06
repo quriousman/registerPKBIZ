@@ -1744,7 +1744,7 @@ a:active {
 
 .register-pkb .form-content {
     font-family: var(--s-heading);
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 40px;
     background-color: #f2f2f5;
     border-radius: 7px
@@ -2469,6 +2469,7 @@ hr {
 }
 
 .progress-btn {
+    font-size: 1rem;
     position: relative;
     min-height: 40px
 }
