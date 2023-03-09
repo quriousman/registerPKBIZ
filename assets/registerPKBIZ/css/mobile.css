@@ -297,6 +297,12 @@ select {
   line-height: var(--s-heading-line-height);
 }
 
+._hl {
+    font-family: var(--s-heading);
+    font-weight: 300;
+    line-height: var(--s-heading-line-height);
+  }
+
 .bigger {
   font-size: 1.5rem;
 }
