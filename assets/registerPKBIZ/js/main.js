@@ -363,8 +363,8 @@ const form = document.forms['contact']
 
 const NAME_REQUIRED = 'กรุณากรอกชื่อ'
 const LASTNAME_REQUIRED = 'กรุณากรอกนามสกุล'
-const PHONE_REQUIRED = 'กรุณากรอกหมายเลขโทรศัพท์'
-const PHONE_INVALID = 'กรุณากรอกหมายเลขโทรศัพท์ให้ถูกต้อง'
+const PHONE_REQUIRED = 'กรุณากรอกเบอร์โทรศัพท์'
+const PHONE_INVALID = 'กรุณากรอกเบอร์โทรศัพท์ให้ถูกต้อง'
 const EMAIL_REQUIRED = 'กรุณากรอกอีเมล'
 const EMAIL_INVALID = 'กรุณากรอกอีเมลให้ถูกต้อง'
 const ORGANIZATION_REQUIRED = 'กรุณากรอกชื่อบริษัท/ธุรกิจของท่าน'
