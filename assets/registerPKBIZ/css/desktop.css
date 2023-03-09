@@ -2,6 +2,10 @@ small {
     line-height: 0.5;
 }
 
+.error-alert {
+    color: red;
+}
+
 .p-header .p-logo svg {
     max-width: 170px
 }
