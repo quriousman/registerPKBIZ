@@ -1,3 +1,7 @@
+small {
+    line-height: 0.5;
+}
+
 .p-header .p-logo svg {
     max-width: 170px
 }

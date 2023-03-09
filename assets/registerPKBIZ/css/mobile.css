@@ -213,7 +213,7 @@ textarea {
     color: inherit;
     font-size: 1rem;
     padding: .5em;
-    line-height: 1.1;
+    line-height: 0.9;
     border-radius: var(--s-rounded-1);
     background-color: #fff;
     width: 100%
@@ -540,6 +540,10 @@ body:not(.logged-in) ._member {
 
 .mb-0 {
     margin-bottom: 0 !important
+}
+
+.mb-1 {
+    margin-bottom: .2rem !important
 }
 
 .mb-2 {

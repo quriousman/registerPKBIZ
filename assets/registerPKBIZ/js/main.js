@@ -268,7 +268,35 @@ function hasValue(input, message) {
   return showSuccess(input)
 }
 
-function validateEmail(input, requiredMsg, invalidMsg) {
+function hasMaxLength(input, maxLength) {
+  return input.length <= maxLength;
+}
+
+function validateFirstName(input, requiredMsg, maxLength) {
+  // check if the value is not empty
+  if (!hasValue(input, requiredMsg)) {
+    return false
+  }
+  // check if the first name meets the maximum length requirement
+  if (!hasMaxLength(input.value.trim(), maxLength)) {
+    return showError(input, `กรุณากรอกชื่อไม่เกิน ${maxLength} ตัวอักษร`)
+  }
+  return true
+}
+
+function validateLastName(input, requiredMsg, maxLength) {
+  // check if the value is not empty
+  if (!hasValue(input, requiredMsg)) {
+    return false
+  }
+  // check if the last name meets the maximum length requirement
+  if (!hasMaxLength(input.value.trim(), maxLength)) {
+    return showError(input, `กรุณากรอกนามสกุลไม่เกิน ${maxLength} ตัวอักษร`)
+  }
+  return true
+}
+
+function validateEmail(input, requiredMsg, invalidMsg, maxLength) {
   // check if the value is not empty
   if (!hasValue(input, requiredMsg)) {
     return false
@@ -276,6 +304,22 @@ function validateEmail(input, requiredMsg, invalidMsg) {
   // validate email format
   if (!is.email(input.value.trim())) {
     return showError(input, invalidMsg)
+  }
+    // check if the email meets the maximum length requirement
+    if (!hasMaxLength(input.value.trim(), maxLength)) {
+      return showError(input, `กรุณากรอกอีเมลไม่เกิน ${maxLength} ตัวอักษร`)
+    }
+  return true
+}
+
+function validateOrganization(input, requiredMsg, maxLength) {
+  // check if the value is not empty
+  if (!hasValue(input, requiredMsg)) {
+    return false
+  }
+  // check if the organization meets the maximum length requirement
+  if (!hasMaxLength(input.value.trim(), maxLength)) {
+    return showError(input, `กรุณากรอกชื่อบริษัท/ธุรกิจของท่านไม่เกิน ${maxLength} ตัวอักษร`)
   }
   return true
 }
@@ -334,8 +378,8 @@ if (form) {
     event.preventDefault()
 
     // validate the form
-    let firstnameValid = hasValue(form.elements['firstname'], NAME_REQUIRED)
-    let lastnameValid = hasValue(form.elements['lastname'], LASTNAME_REQUIRED)
+    let firstnameValid = validateFirstName(form.elements['firstname'], NAME_REQUIRED, 100)
+    let lastnameValid = validateLastName(form.elements['lastname'], LASTNAME_REQUIRED, 100)
     let phoneValid = validatePhone(
       form.elements['phone'],
       PHONE_REQUIRED,
@@ -345,10 +389,12 @@ if (form) {
       form.elements['email'],
       EMAIL_REQUIRED,
       EMAIL_INVALID,
+      140,
     )
-    let organizationValid = hasValue(
+    let organizationValid = validateOrganization(
       form.elements['organization'],
       ORGANIZATION_REQUIRED,
+      140,
     )
     let businesstypeValid = hasValue(
       form.elements['businesstype'],
